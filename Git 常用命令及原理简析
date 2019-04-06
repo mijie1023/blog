@@ -1,0 +1,18 @@
+
+Git 常用命令及原理简析：
+
+1.Git配置：
+
+# 显示当前的Git配置
+$ git config --list
+# 编辑Git配置文件，只是配置用户信息的话直接看下面两行命令即可
+$ git config -e [--global]
+# 设置提交代码时的用户信息，是否加上全局--global自行决定，一般是直接设置全局的。另外用户邮箱需要注意最好使用gmail,QQ也可以，需要和你远程仓库保持一致不然你的contribution是不会被记录在远程仓库的
+$ git config [--global] user.name "[name]"
+$ git config [--global] user.email "[email address]"
+
+
+资料：
+https://juejin.im/post/599e14875188251240632702
+https://juejin.im/post/582bd0b4da2f600063d4f89e
+http://www.cnblogs.com/best/p/7474442.html
