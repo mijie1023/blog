@@ -4,15 +4,53 @@ Git 常用命令及原理简析：
 1.Git配置：
 
 # 显示当前的Git配置
-$ git config --list
+$ git config --list --system（系统） --global（当前用户）--local（当前仓库）
 # 编辑Git配置文件，只是配置用户信息的话直接看下面两行命令即可
 $ git config -e [--global]
 # 设置提交代码时的用户信息，是否加上全局--global自行决定，一般是直接设置全局的。另外用户邮箱需要注意最好使用gmail,QQ也可以，需要和你远程仓库保持一致不然你的contribution是不会被记录在远程仓库的
 $ git config [--global] user.name "[name]"
 $ git config [--global] user.email "[email address]"
 
+忽略文件：
+#为注释
+*.txt #忽略所有 .txt结尾的文件
+!lib.txt #但lib.txt除外
+/temp #仅忽略项目根目录下的TODO文件,不包括其它目录temp
+build/ #忽略build/目录下的所有文件
+doc/*.txt #会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+
+2.常用命令：
+cd   跳转到当前用户根目录；
+pwd  当前目录路径；
+touch  创建文件；如 touch index.js
+mkdir  创建文件夹；
+rm   删除文件；
+rm -r 删除文件夹；
+mv   移动文件；mv index.js ../src
+reset/clear  清屏
+
+3.Git 常用操作：
+	git init/clone  初始化；
+	git add: 增加到缓存区；
+	git commit: 提交到本地库；
+	git commit --amend: 如果我们提交过后发现有个文件改错了，或者只是想修改提交说明；？
+	git checkout: 撤销修改；修改来了工作区；
+	git reset HEAD [file]:  撤销git add
+	git reset --hard HEAD^/git reset --hard HEAD~1
+	git status: 查看目录状态；
+	git rm --cached <file>: 从缓存区删除，不改变工作区；没有cached会删除物理文件；
+	git diff: 比较工作区和缓存区；
+	git branch [branch-name]: 创建分支；
+	git branch -d [branch-name]: 删除分支；
+	git log --graph: 产看图形日志；
+
+	git push origin: 推动到远程库； 
+
 
 资料：
 https://juejin.im/post/599e14875188251240632702
 https://juejin.im/post/582bd0b4da2f600063d4f89e
 http://www.cnblogs.com/best/p/7474442.html
+https://git-scm.com/docs
+
+https://shimo.im/docs/7ug1exikq7I87dCW
