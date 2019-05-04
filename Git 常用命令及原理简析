@@ -1,4 +1,3 @@
-
 Git 常用命令及原理简析：
 
 1.Git配置：
@@ -44,7 +43,7 @@ reset/clear  清屏
 	git branch -d [branch-name]: 删除分支；
 	git log --graph: 产看图形日志；
 
-	git push origin: 推动到远程库； 
+	git push origin: 推动到远程库；
 
 
 资料：

@@ -1,10 +1,10 @@
 目录：
-    0.Git 常用命令及原理简析;
-	1.深入Promise；
-	2.浅析前后端分离实践；
-	3.深入React Context；
-	4.深入函数式编程；
-	5.浅析Vue，对比React；
-	6.深入rem，布局实现；
-	7.深入GraphQL；
-	8.SSR实践；
+- [x] 0.Git 常用命令及原理简析;
+- [ ] 1.深入Promise；
+- [x] 2.浅析前后端分离实践；
+- [ ] 3.深入React Context；
+- [ ] 4.深入函数式编程；
+- [ ] 5.浅析Vue，对比React；
+- [ ] 6.深入rem，布局实现；
+- [ ] 7.深入GraphQL；
+- [ ] 8.React SSR实践；
